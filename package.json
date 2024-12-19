@@ -10,6 +10,7 @@
   "author": "anouar garbaa",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "date-fns": "^4.1.0",
     "express": "^4.21.2",
     "uuid": "^11.0.3"

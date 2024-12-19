@@ -1,7 +1,24 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const cors = require("cors");
+const { logger } = require("./middleware/logEvents");
 const PORT = process.env.PORT || 3500;
+
+// custom middleware logger
+app.use(logger);
+
+
+
+//built-in middleware to handle urlencoded data (form data)
+//'content-type: application/x-www-form-urlencoded'
+app.use(express.urlencoded({ extended: false }));
+
+//built-in middleware for json
+app.use(express.json());
+
+//serve static file
+app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("^/$|/index(.html)?", (req, res) => {
   // res.send('Hello world!')

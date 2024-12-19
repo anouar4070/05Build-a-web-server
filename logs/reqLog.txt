@@ -15,3 +15,11 @@
 20241219	16:43:29	03bfa51f-cc13-4e1e-9a03-00b6a5ebde1d	/css/style.css	GET
 20241219	16:43:29	54c22d68-115b-487c-944a-74d595137f2a	/img/img1.jpg	GET
 20241219	16:43:29	00bc43a1-2366-4e7a-b457-66a679382ec2	/favicon.ico	GET
+20241219	20:17:40	1a0ea324-eff3-4d8e-b1c7-0dc2e4c6aa41	GET	undefined	/
+20241219	20:17:40	47dd8b7e-12db-4185-83cc-8bad9800cc9c	GET	undefined	/css/style.css
+20241219	20:25:22	a3a6be5a-85ce-422c-8e46-b436ed75825c	GET	undefined	/
+20241219	20:25:22	f0c81578-6b32-4013-960a-58e271b76e70	GET	undefined	/css/style.css
+20241219	20:27:15	04211238-8509-4dfb-a2e9-500bd93e274e	OPTIONS	https://www.google.tn	/
+20241219	20:27:15	a1e03d9f-46be-4ad9-b08d-33ae148bdb0b	GET	https://www.google.tn	/
+20241219	20:31:46	32feb9a9-b934-4031-b085-98c1ea099052	OPTIONS	https://www.google.tn	/
+20241219	20:31:46	35cd6f53-b7c6-4988-b73c-071ad5205ea8	GET	https://www.google.tn	/
