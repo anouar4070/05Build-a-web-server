@@ -8,7 +8,7 @@ const EventEmitter = require("events");
 class Emitter extends EventEmitter {}
 // initialize object
 const myEmitter = new Emitter();
-
+myEmitter.on("log", (msg, fileName) => logEvents(msg, fileName));
 const PORT = process.env.PORT || 3500;
 
 const serveFile = async (filePath, contentType, response) => {
@@ -28,13 +28,14 @@ const serveFile = async (filePath, contentType, response) => {
   } catch (err) {
     console.log(err);
     myEmitter.emit("log", `${err.name}: ${err.message}`, "errLog.txt");
-    response.statusCode = 500;
+    response.statusCode = 500; //server error
     response.end();
   }
 };
 
 const server = http.createServer((req, res) => {
   console.log(req.url, req.method);
+  myEmitter.emit("log", `${req.url}\t${req.method}`, "reqLog.txt");
 
   const extension = path.extname(req.url);
 
@@ -51,10 +52,10 @@ const server = http.createServer((req, res) => {
       contentType = "application/json";
       break;
     case ".jpg":
-      contentType = "text/jpeg";
+      contentType = "image/jpeg";
       break;
     case ".png":
-      contentType = "text/png";
+      contentType = "image/png";
       break;
     case ".txt":
       contentType = "text/plain";
@@ -82,7 +83,7 @@ const server = http.createServer((req, res) => {
   } else {
     switch (path.parse(filePath).base) {
       case "old-page.html":
-        res.writeHead(301, { Location: "/new-page.html" });
+        res.writeHead(301, { Location: "/new-page.html" }); //301: redirect
         res.end();
         break;
       case "www-page.html":
@@ -96,10 +97,6 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-/*
-myEmitter.on("log", (msg) => logEvents(msg));
-myEmitter.emit("log", "Log event emitted!"); */
 
 /*
   let filePath;
