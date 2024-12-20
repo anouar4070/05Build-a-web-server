@@ -48,3 +48,10 @@
 20241220	09:48:11	1bbbd3ee-41e2-494c-a5b9-8ca7b1d87935	GET	undefined	/new-page.html
 20241220	09:48:11	e86664c7-b104-46e9-a000-948656474844	GET	undefined	/css/style.css
 20241220	09:48:11	6d18eb54-169f-4907-9058-202954618eaa	GET	undefined	/img/img1.jpg
+20241220	10:21:04	ab67f135-1358-4640-9ceb-a746596f3f61	GET	undefined	/employees
+20241220	10:24:04	96c722fd-eb59-43f2-ba30-5da11318351e	POST	undefined	/employees
+20241220	10:25:13	29adcaff-bda1-4bbe-bafc-ea66cabce4a8	POST	undefined	/employees
+20241220	10:28:16	3affb12d-db9b-496e-b852-a520d993df20	PUT	undefined	/employees
+20241220	10:29:39	7ab3b9ee-9566-46c9-919c-ea0a21c54a26	PUT	undefined	/employees
+20241220	10:31:52	5eeb494e-5ad0-47fc-b098-895ff431eabd	DELETE	undefined	/employees
+20241220	10:33:32	c7c9a6cf-1da2-42e3-8cd4-48dc5417276b	GET	undefined	/employees/1
