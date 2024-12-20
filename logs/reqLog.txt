@@ -37,3 +37,14 @@
 20241219	21:16:41	bfc3c7d6-2fff-458f-b847-25c5d888500e	GET	undefined	/
 20241219	21:29:37	115f63da-7ef6-4edf-a3c9-a1a5c7592852	GET	undefined	/an
 20241219	21:29:37	31fa5d1e-54e1-4d29-accd-ec3622bc4a25	GET	undefined	/css/style.css
+20241220	09:07:59	e340dd34-c2c7-4c55-a6f2-f59c70be8e87	GET	undefined	/
+20241220	09:07:59	bfe74c33-f97e-4694-a805-b0627f498e87	GET	undefined	/css/style.css
+20241220	09:08:00	d12582ee-380e-460c-bbe2-647e44792f24	GET	undefined	/favicon.ico
+20241220	09:08:33	3f9a7c38-eba1-46d9-95c7-b5aa188a6d0b	GET	undefined	/subdir
+20241220	09:09:03	35f94627-a36d-48e0-8923-2104fe145da4	GET	undefined	/subdir/test
+20241220	09:09:19	a3d7b493-fadb-4036-8b9c-10e47053f2aa	GET	undefined	/subdir/test.html
+20241220	09:09:42	b7885abb-a27c-4209-8a32-d7bb9778a668	GET	undefined	/subdir/test.html
+20241220	09:10:58	ca2a8fc8-4ae0-4927-b543-5fcf1ee8d139	GET	undefined	/subdir/test.html
+20241220	09:48:11	1bbbd3ee-41e2-494c-a5b9-8ca7b1d87935	GET	undefined	/new-page.html
+20241220	09:48:11	e86664c7-b104-46e9-a000-948656474844	GET	undefined	/css/style.css
+20241220	09:48:11	6d18eb54-169f-4907-9058-202954618eaa	GET	undefined	/img/img1.jpg

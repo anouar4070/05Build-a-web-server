@@ -39,22 +39,18 @@ app.use(express.json());
 
 //serve static file
 app.use(express.static(path.join(__dirname, "/public")));
+// app.use('/', express.static(path.join(__dirname, "/public")));
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
-app.get("^/$|/index(.html)?", (req, res) => {
-  // res.send('Hello world!')
-  //res.sendFile("./views/index.html", { root: __dirname });
-  res.sendFile(path.join(__dirname, "views", "index.html"));
-});
+//Routing
+app.use("/", require("./routes/root"));
+app.use("/subdir", require("./routes/subdir"));
+app.use("/employees", require("./routes/api/employees"));
 
-app.get("/new-page(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "new-page.html"));
-});
-app.get("/old-page(.html)?", (req, res) => {
-  res.redirect(301, "/new-page.html"); //302 by default
-});
+
 
 //ROUTE Handlers
-app.get(
+/*app.get(
   "/hello(.html)?",
   (req, res, next) => {
     console.log("attempted to load hello.html");
@@ -63,10 +59,10 @@ app.get(
   (req, res) => {
     res.send("attempt second time");
   }
-);
+);*/
 
 //Chaining route handlers
-const one = (req, res, next) => {
+/*const one = (req, res, next) => {
   console.log("one");
   next();
 };
@@ -79,8 +75,7 @@ const three = (req, res) => {
   res.send("Finished!");
 };
 
-app.get("/chain(.html)?", [one, two, three]);
-
+app.get("/chain(.html)?", [one, two, three]);*/
 
 // app.get("/*", (req, res) => {
 //   res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
@@ -88,14 +83,13 @@ app.get("/chain(.html)?", [one, two, three]);
 
 app.all("/*", (req, res) => {
   res.status(404);
-  if(req.accepts('html')) {
+  if (req.accepts("html")) {
     res.sendFile(path.join(__dirname, "views", "404.html"));
-  } else if(req.accepts('json')) {
-    res.json({error: "404 Not Found"});
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
   } else {
-    res.type('txt').send("404 Not Found")
+    res.type("txt").send("404 Not Found");
   }
-  
 });
 
 app.use(errorHandler);
