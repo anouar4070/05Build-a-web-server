@@ -43,8 +43,11 @@ const handleLogin = async (req, res) => {
       path.join(__dirname, "..", "modal", "users.json"),
       JSON.stringify(usersDB.users)
     );
-
-    res.json({ success: `User ${user} is logged in!` });
+    res.cookie("jwt", refreshToken, {
+      httpOnly: true, //it's not available to JS
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+    res.json({ accessToken });
   } else {
     res.sendStatus(401);
   }
