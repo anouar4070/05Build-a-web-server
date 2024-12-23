@@ -2,3 +2,5 @@
 20241220	09:09:03	46e58d64-6d16-4ed7-93fc-71d930a5f842	Error: ENOENT: no such file or directory, stat 'D:\NodeJs Dave Gray\05Build a web server\views\subdir\test.html'
 20241220	09:09:19	da1a2e5e-3a80-4725-9404-349d248a4b71	Error: ENOENT: no such file or directory, stat 'D:\NodeJs Dave Gray\05Build a web server\views\subdir\test.html'
 20241220	10:28:16	a7cd6967-bd39-447d-a9d7-bde92bc37e9a	SyntaxError: Expected double-quoted property name in JSON at position 57
+20241223	14:49:42	37227080-e9c5-4aeb-90ba-69cf36de7b1b	SyntaxError: Expected ',' or '}' after property value in JSON at position 13 (line 1 column 14)
+20241223	14:50:17	bcc3e0a2-6d57-45fc-bde5-6676aca844b1	SyntaxError: Unexpected token ''', "{"id": '676969d4a"... is not valid JSON
