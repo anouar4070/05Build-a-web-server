@@ -112,3 +112,5 @@
 20241223	09:46:54	c3ce540e-8bab-4638-b3ef-b9c9483ada3c	POST	undefined	/auth
 20241223	09:47:23	0ab7a1d6-b194-485b-a0e9-040ed4eeeb2a	DELETE	undefined	/employees
 20241223	09:50:10	9889442f-daf6-4a26-b3f6-f91769c1ffcb	POST	undefined	/auth
+20241223	11:26:45	71a8c7ee-a2e4-42a0-81ef-01aab41a80a9	POST	undefined	/register
+20241223	11:27:51	ed06fe20-4ccd-405e-a49d-0b9c47d306b2	POST	undefined	/register
